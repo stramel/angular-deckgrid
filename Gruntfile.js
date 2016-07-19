@@ -25,8 +25,8 @@ module.exports = function (grunt) {
                 report: 'gzip'
             },
             dist: {
-                src: '<%= pkg.name %>.js',
-                dest: '<%= pkg.name %>.min.js'
+                src: 'dist/<%= pkg.name %>.js',
+                dest: 'dist/<%= pkg.name %>.min.js'
             }
         },
         concat: {
@@ -35,7 +35,7 @@ module.exports = function (grunt) {
             },
             dist: {
                 src: ['src/index.js', 'src/descriptor.js', 'src/deckgrid.js'],
-                dest: '<%= pkg.name %>.js'
+                dest: 'dist/<%= pkg.name %>.js'
             }
         },
         jshint: {
@@ -58,10 +58,10 @@ module.exports = function (grunt) {
                 autoWatch: true
             }
         },
-        ngmin: {
+        ngAnnotate: {
             dist: {
-                src: '<%= pkg.name %>.js',
-                dest: '<%= pkg.name %>.js'
+                src: 'dist/<%= pkg.name %>.js',
+                dest: 'dist/<%= pkg.name %>.js'
             }
         }
     });
@@ -70,6 +70,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-karma');
+    grunt.loadNpmTasks('grunt-ng-annotate');
     grunt.registerTask('test', ['jshint', 'karma:dist']);
-    grunt.registerTask('default', ['test', 'concat', 'uglify']);
+    grunt.registerTask('default', ['test', 'concat', 'ngAnnotate', 'uglify']);
 };
