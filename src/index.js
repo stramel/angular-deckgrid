@@ -15,12 +15,12 @@ angular.module('akoenig.deckgrid', []);
 
 angular.module('akoenig.deckgrid').directive('deckgrid', [
 
-    'DeckgridDescriptor',
+  'DeckgridDescriptor',
 
-    function initialize (DeckgridDescriptor) {
+  function initialize(DeckgridDescriptor) {
 
-        'use strict';
+    'use strict';
 
-        return DeckgridDescriptor.create();
-    }
+    return DeckgridDescriptor.create();
+  }
 ]);

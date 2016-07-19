@@ -144,7 +144,8 @@ Do you use the `angular-deckgrid` and would like to be featured here? Just send 
 ### Version 0.6.0 (Future)
 
 - Open: [Bugfix] We need a solution to prevent the model binding for `innerHTML` templates (e.g. `ngIf` not working) [#44](https://github.com/akoenig/angular-deckgrid/issues/44)
-- Added support for Webpack and Browserify [#97](https://github.com/akoenig/angular-deckgrid/issues/97), [#98](https://github.com/akoenig/angular-deckgrid/pull/98), [#107](https://github.com/akoenig/angular-deckgrid/pull/107)
+- [Feature] Support for Webpack and Browserify. Thanks [@SuperPaintman](https://github.com/SuperPaintman) and [@mjhasbach](https://github.com/mjhasbach) ([#97](https://github.com/akoenig/angular-deckgrid/issues/97), [#98](https://github.com/akoenig/angular-deckgrid/pull/98), [#107](https://github.com/akoenig/angular-deckgrid/pull/107))
+- [Bugfix] IE styling handled properly. Thanks [@mxshrestha](https://github.com/mxshrestha) ([#101](https://github.com/akoenig/angular-deckgrid/issues/101), [#102](https://github.com/akoenig/angular-deckgrid/pull/102), [#105](https://github.com/akoenig/angular-deckgrid/issues/105))
 
 ### Version 0.5.0 (20141031)
 
