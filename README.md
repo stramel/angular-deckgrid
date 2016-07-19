@@ -129,7 +129,7 @@ Although this example represents an adaptive kind of layout you are able to real
 You may wonder why it is not possible to access your scope in the card template. The `angular-deckgrid` uses directives of AngularJS internally which creates new scopes. To avoid the "anti-pattern" of using "$parent.$parent.$parent.yourFunction()" in the card template, the `angular-deckgrid` provides a shortcut `mother.*` which points to your scope. An example:
 
     <button data-ng-click="mother.doSomething()">Click me!</button>
-    
+
 A click on this button would execute the `doSomething()` function in your scope.
 
 ## In action
@@ -144,6 +144,7 @@ Do you use the `angular-deckgrid` and would like to be featured here? Just send 
 ### Version 0.6.0 (Future)
 
 - Open: [Bugfix] We need a solution to prevent the model binding for `innerHTML` templates (e.g. `ngIf` not working) [#44](https://github.com/akoenig/angular-deckgrid/issues/44)
+- Added support for Webpack and Browserify [#97](https://github.com/akoenig/angular-deckgrid/issues/97), [#98](https://github.com/akoenig/angular-deckgrid/pull/98), [#107](https://github.com/akoenig/angular-deckgrid/pull/107)
 
 ### Version 0.5.0 (20141031)
 
@@ -159,7 +160,7 @@ Do you use the `angular-deckgrid` and would like to be featured here? Just send 
 
 ### Version 0.4.3 (20140422)
 
-- [Bugfix] OnMediaQueryChange Listeners not being removed onDestroy. [#35](https://github.com/akoenig/angular-deckgrid/issues/35) 
+- [Bugfix] OnMediaQueryChange Listeners not being removed onDestroy. [#35](https://github.com/akoenig/angular-deckgrid/issues/35)
 
 ### Version 0.4.2 (20140422)
 
