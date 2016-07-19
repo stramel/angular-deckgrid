@@ -18,3 +18,5 @@ _(ordered by first contribution)_
 - [Matthew Hasbach](https://github.com/mjhasbach)
 - [Alexander](https://github.com/SuperPaintman)
 - [Maxim Georgievskiy](https://github.com/maxsunlight)
+- [Paul Bailey](https://github.com/pizzapanther)
+- [sunshieno](https://github.com/sunshineo)
