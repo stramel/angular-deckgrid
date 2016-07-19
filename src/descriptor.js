@@ -54,24 +54,11 @@ angular.module('akoenig.deckgrid').factory('DeckgridDescriptor', [
     /**
      * @private
      *
-     * Cleanup method. Will be called when the
-     * deckgrid directive should be destroyed.
-     *
-     */
-    Descriptor.prototype.$$destroy = function $$destroy() {
-      this.$$deckgrid.destroy();
-    };
-
-    /**
-     * @private
-     *
      * The deckgrid link method. Will instantiate the deckgrid.
      *
      */
     Descriptor.prototype.$$link = function $$link(scope, elem, attrs, nullController, transclude) {
       var templateKey = 'deckgrid/innerHtmlTemplate' + (++this.$$templateKeyIndex) + '.html';
-
-      scope.$on('$destroy', this.$$destroy.bind(this));
 
       if (angular.isUndefined(attrs.cardtemplate)) {
         if (angular.isUndefined(attrs.cardtemplatestring)) {
@@ -109,6 +96,9 @@ angular.module('akoenig.deckgrid').factory('DeckgridDescriptor', [
       scope.mother = scope.$parent;
 
       this.$$deckgrid = Deckgrid.create(scope, elem[0]);
+
+      // Cleanup, will be called when the deckgrid directive should be destroyed
+      scope.$on('$destroy', this.$$deckgrid.destroy.bind(this.$$deckgrid));
     };
 
     return {

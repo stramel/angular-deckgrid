@@ -144,14 +144,15 @@ Do you use the `angular-deckgrid` and would like to be featured here? Just send 
 ### Version 0.6.0 (Future)
 
 - Open: [Bugfix] We need a solution to prevent the model binding for `innerHTML` templates (e.g. `ngIf` not working) [#44](https://github.com/akoenig/angular-deckgrid/issues/44)
-- [Feature] Support for Webpack and Browserify. Thanks [@SuperPaintman](https://github.com/SuperPaintman) and [@mjhasbach](https://github.com/mjhasbach) ([#97](https://github.com/akoenig/angular-deckgrid/issues/97), [#98](https://github.com/akoenig/angular-deckgrid/pull/98), [#107](https://github.com/akoenig/angular-deckgrid/pull/107))
-- [Bugfix] IE styling handled properly. Thanks [@mxshrestha](https://github.com/mxshrestha) ([#101](https://github.com/akoenig/angular-deckgrid/issues/101), [#102](https://github.com/akoenig/angular-deckgrid/pull/102), [#105](https://github.com/akoenig/angular-deckgrid/issues/105))
+- [Feature] Support for Webpack and Browserify [#97](https://github.com/akoenig/angular-deckgrid/issues/97), [#98](https://github.com/akoenig/angular-deckgrid/pull/98), [#107](https://github.com/akoenig/angular-deckgrid/pull/107)
+- [Bugfix] IE styling not being caught properly [#101](https://github.com/akoenig/angular-deckgrid/issues/101), [#102](https://github.com/akoenig/angular-deckgrid/pull/102), [#105](https://github.com/akoenig/angular-deckgrid/issues/105)
+- [Bugfix] Always destroys newest instance [#108](https://github.com/akoenig/angular-deckgrid/pull/108)
 
 ### Version 0.5.0 (20141031)
 
 - Upgraded AngularJS dependency in `bower.json` (v1.3.0).
-- Changed the collection comparison which triggers the repaint (see #48).
-- Switched from `$watch` to `$watchCollection` to gain a bit more performance (see #56).
+- Changed the collection comparison which triggers the repaint (see [#48](https://github.com/akoenig/angular-deckgrid/issues/48)).
+- Switched from `$watch` to `$watchCollection` to gain a bit more performance (see [#56](https://github.com/akoenig/angular-deckgrid/issues/56)).
 - Ported the ordinary `undefined` checks to AngularJS standard functions.
 
 ### Version 0.4.4 (20140514)

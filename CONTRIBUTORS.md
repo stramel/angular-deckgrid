@@ -14,3 +14,7 @@ _(ordered by first contribution)_
 - [Michel Boudreau](https://github.com/mboudreau)
 - [Sam Milledge](https://github.com/smilledge)
 - [Phuong Nguyen](https://github.com/phuongnd08)
+- [Manish Shrestha](https://github.com/mxshrestha)
+- [Matthew Hasbach](https://github.com/mjhasbach)
+- [Alexander](https://github.com/SuperPaintman)
+- [Maxim Georgievskiy](https://github.com/maxsunlight)
